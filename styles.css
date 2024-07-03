@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.candle{
+    width: 6px;
+    height: 50px;
+    background: #ffd700; /* Candle color */
+    position: absolute;
+    top: -50px; /* Position above the cake */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Candle shadow */
+}
+
+.cake-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cake-top {
+    width: 201px;
+    height: 40px;
+    background: #ffadad;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cake-layer {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cake-layer1 {
+    background: #ff7070;
+    top: 30px;
+}
+
+.cake-layer2 {
+    background: #ff4949;
+    top: 50px;
+}
+
+.cake-layer3 {
+    background: #ff2020;
+    top: 70px;
+}
+
+.cake-base {
+    width: 220px;
+    height: 30px;
+    background: #ff0000;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 10px 10px;
+}
+
+.cake-button:hover .cake-top {
+    background: #ff8080;
+}
+
+.cake-button:hover .cake-layer1 {
+    background: #ff5a5a;
+}
+
+.cake-button:hover .cake-layer2 {
+    background: #ff4040;
+}
+
+.cake-button:hover .cake-layer3 {
+    background: #ff1a1a;
+}
+
+.cake-button:hover .cake-base {
+    background: #e60000;
+}
